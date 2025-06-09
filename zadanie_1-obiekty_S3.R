@@ -17,6 +17,7 @@ library(htmlwidgets) # framework (szkielet) do tworzenia interaktywnych wizualiz
 
 haversine <- function(lon1, lat1, lon2, lat2) {
   R <- 6371000  # promień Ziemi w metrach
+  #Promień Ziemi nie jest wszędzie jednakowy, ponieważ Ziemia nie jest idealną kulą, a spłaszczoną elipsoidą. Najczęściej podaje się średni promień Ziemi, który wynosi około 6 371 000 metrów.
   to_rad <- pi / 180
   phi1 <- lat1 * to_rad
   phi2 <- lat2 * to_rad
